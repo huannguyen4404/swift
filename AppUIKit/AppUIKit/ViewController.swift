@@ -8,31 +8,21 @@
 
 import UIKit
 import SwiftUI
-import Combine
 
 class ViewController: UIViewController {
-    
-    var handleEvent: AnyCancellable!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    @IBOutlet weak var myTextField: UITextField!
-    @IBSegueAction func moveToSwiftUI(_ coder: NSCoder) -> UIViewController? {
-        let text = myTextField.text ?? ""
-        
-        let delegate = ContenViewDelegate()
-        handleEvent = delegate.didChange.sink { [weak self](delegate) in
-            self?.myTextField.text = delegate.newValue
-            self?.navigationController?.popViewController(animated: true)
-            
-        }
-        
-        return UIHostingController(coder: coder, rootView: ContentView(delegate: delegate, value: text))
-    }
-    
-
 }
 
+struct ViewControllerRepresentation: UIViewControllerRepresentable {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ViewControllerRepresentation>) -> ViewController {
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as! ViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: ViewController, context: UIViewControllerRepresentableContext<ViewControllerRepresentation>) {
+        
+    }
+}
