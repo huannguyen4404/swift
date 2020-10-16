@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		B2CFA99A253973060003D423 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFA999253973060003D423 /* SearchBar.swift */; };
 		B2CFA99C253982FE0003D423 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFA99B253982FE0003D423 /* Setting.swift */; };
 		B2CFA99F25398B250003D423 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFA99E25398B250003D423 /* ImageDownloader.swift */; };
+		B2CFA9A3253991A50003D423 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CFA9A2253991A50003D423 /* ImageUrl.swift */; };
+		B2CFA9A62539A0F50003D423 /* DynamicColor in Frameworks */ = {isa = PBXBuildFile; productRef = B2CFA9A52539A0F50003D423 /* DynamicColor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		B2CFA999253973060003D423 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B2CFA99B253982FE0003D423 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		B2CFA99E25398B250003D423 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		B2CFA9A2253991A50003D423 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CFA9A62539A0F50003D423 /* DynamicColor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				B29CAF4725393F07008AB664 /* Preview Content */,
 				B2CFA99725395CD20003D423 /* ListHorizontal.swift */,
 				B2CFA995253959EF0003D423 /* FilterList.swift */,
+				B2CFA9A2253991A50003D423 /* ImageUrl.swift */,
 				B2CFA999253973060003D423 /* SearchBar.swift */,
 				B2CFA99B253982FE0003D423 /* Setting.swift */,
 			);
@@ -125,6 +130,9 @@
 			dependencies = (
 			);
 			name = MotorShow;
+			packageProductDependencies = (
+				B2CFA9A52539A0F50003D423 /* DynamicColor */,
+			);
 			productName = MotorShow;
 			productReference = B29CAF3C25393F04008AB664 /* MotorShow.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +161,9 @@
 				Base,
 			);
 			mainGroup = B29CAF3325393F04008AB664;
+			packageReferences = (
+				B2CFA9A42539A0F50003D423 /* XCRemoteSwiftPackageReference "DynamicColor" */,
+			);
 			productRefGroup = B29CAF3D25393F04008AB664 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +198,7 @@
 				B29CAF4025393F04008AB664 /* AppDelegate.swift in Sources */,
 				B29CAF4225393F04008AB664 /* SceneDelegate.swift in Sources */,
 				B2CFA99C253982FE0003D423 /* Setting.swift in Sources */,
+				B2CFA9A3253991A50003D423 /* ImageUrl.swift in Sources */,
 				B2CFA99F25398B250003D423 /* ImageDownloader.swift in Sources */,
 				B29CAF4425393F04008AB664 /* ContentView.swift in Sources */,
 			);
@@ -382,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2CFA9A42539A0F50003D423 /* XCRemoteSwiftPackageReference "DynamicColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/DynamicColor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2CFA9A52539A0F50003D423 /* DynamicColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2CFA9A42539A0F50003D423 /* XCRemoteSwiftPackageReference "DynamicColor" */;
+			productName = DynamicColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B29CAF3425393F04008AB664 /* Project object */;
 }
