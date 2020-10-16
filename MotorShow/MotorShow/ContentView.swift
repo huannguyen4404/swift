@@ -21,9 +21,9 @@ struct ContentView: View {
                     Text("List horizontal")
                 }.padding()
                 
-//                NavigationLink(destination: Setting()) {
-//                    Text("App Settings")
-//                }.padding()
+                NavigationLink(destination: Setting()) {
+                    Text("App Settings")
+                }.padding()
             }
         }
     }
