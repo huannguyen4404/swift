@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>400972599861-c4qpr1vhccgfn72ec4pqtv0q50c2bgr8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.400972599861-c4qpr1vhccgfn72ec4pqtv0q50c2bgr8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDCdXHsmZa3wPObluCzaTBlef2nIpikzwg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>400972599861</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.itraining.swiftui.AuthenApp</string>
+	<key>PROJECT_ID</key>
+	<string>itraining-c6889</string>
+	<key>STORAGE_BUCKET</key>
+	<string>itraining-c6889.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:400972599861:ios:0b4ed6ed0b8ab89c34977c</string>
+	<key>DATABASE_URL</key>
+	<string>https://itraining-c6889.firebaseio.com</string>
+</dict>
+</plist>
