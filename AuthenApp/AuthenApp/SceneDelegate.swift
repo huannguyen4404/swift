@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let loginState = AuthenticationState.shared
-        let contentView = AuthenFormView().environmentObject(loginState)
+        let contentView = ContentView().environmentObject(loginState)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

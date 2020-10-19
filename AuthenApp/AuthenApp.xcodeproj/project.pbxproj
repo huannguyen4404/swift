@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B203E16E253D2FEA00EFAA92 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203E16D253D2FEA00EFAA92 /* SignUpView.swift */; };
+		B203E172253D32CE00EFAA92 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203E171253D32CE00EFAA92 /* HomeView.swift */; };
+		B203E176253D36D100EFAA92 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203E175253D36D100EFAA92 /* WebView.swift */; };
+		B24AA7DC253D4D3300B6105D /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24AA7DB253D4D3300B6105D /* AuthType.swift */; };
 		B27471F1253C9D82000F587B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B27471F0253C9D82000F587B /* GoogleService-Info.plist */; };
 		B27471F4253C9F0D000F587B /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27471F3253C9F0D000F587B /* AuthenticationState.swift */; };
+		B27471F6253D2960000F587B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27471F5253D2960000F587B /* ProgressView.swift */; };
 		B27F33DA253C97D80073022D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F33D9253C97D80073022D /* AppDelegate.swift */; };
 		B27F33DC253C97D80073022D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F33DB253C97D80073022D /* SceneDelegate.swift */; };
 		B27F33DE253C97D80073022D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F33DD253C97D80073022D /* ContentView.swift */; };
@@ -22,8 +27,13 @@
 /* Begin PBXFileReference section */
 		0E3601DC45AFF86F1756B9BF /* Pods-AuthenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenApp.release.xcconfig"; path = "Target Support Files/Pods-AuthenApp/Pods-AuthenApp.release.xcconfig"; sourceTree = "<group>"; };
 		A288853CE4C62E81C3335260 /* Pods-AuthenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenApp.debug.xcconfig"; path = "Target Support Files/Pods-AuthenApp/Pods-AuthenApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B203E16D253D2FEA00EFAA92 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B203E171253D32CE00EFAA92 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B203E175253D36D100EFAA92 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B24AA7DB253D4D3300B6105D /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
 		B27471F0253C9D82000F587B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B27471F3253C9F0D000F587B /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
+		B27471F5253D2960000F587B /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		B27F33D6253C97D80073022D /* AuthenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27F33D9253C97D80073022D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27F33DB253C97D80073022D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B27471F3253C9F0D000F587B /* AuthenticationState.swift */,
+				B24AA7DB253D4D3300B6105D /* AuthType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +123,10 @@
 			children = (
 				B27F33DD253C97D80073022D /* ContentView.swift */,
 				B27F33EE253C983C0073022D /* AuthenFormView.swift */,
+				B27471F5253D2960000F587B /* ProgressView.swift */,
+				B203E16D253D2FEA00EFAA92 /* SignUpView.swift */,
+				B203E171253D32CE00EFAA92 /* HomeView.swift */,
+				B203E175253D36D100EFAA92 /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,8 +258,13 @@
 				B27F33DA253C97D80073022D /* AppDelegate.swift in Sources */,
 				B27F33DC253C97D80073022D /* SceneDelegate.swift in Sources */,
 				B27F33DE253C97D80073022D /* ContentView.swift in Sources */,
+				B203E16E253D2FEA00EFAA92 /* SignUpView.swift in Sources */,
 				B27F33EF253C983C0073022D /* AuthenFormView.swift in Sources */,
+				B24AA7DC253D4D3300B6105D /* AuthType.swift in Sources */,
+				B203E172253D32CE00EFAA92 /* HomeView.swift in Sources */,
+				B203E176253D36D100EFAA92 /* WebView.swift in Sources */,
 				B27471F4253C9F0D000F587B /* AuthenticationState.swift in Sources */,
+				B27471F6253D2960000F587B /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

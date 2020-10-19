@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var authState: AuthenticationState
+    
     var body: some View {
-        Text("Hello, World!")
+        Group {
+            if authState.loggedInUser != nil {
+                HomeView()
+            } else {
+                SignUpView(authType: .signup)
+            }
+        }
+        .animation(.easeOut)
+        .transition(.move(edge: .bottom))
     }
 }
 
